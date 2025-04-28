@@ -1,5 +1,5 @@
 /******************************************************************/
-// Front-end JS, dictating the behavious of the user interface
+// Client JS, dictating the behavious of the user interface
 /******************************************************************/
 
 // Global variables
