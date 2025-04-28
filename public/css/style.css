@@ -1,0 +1,158 @@
+/* Custom styling on top of Bootstrap */
+
+/* Product card styling */
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #0d6efd;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.product-card .brand {
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.product-card .description-container {
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.product-card .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.product-card .description.expanded {
+    -webkit-line-clamp: unset;
+}
+
+.product-card .show-more {
+    color: #0d6efd;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.product-card .product-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Status message styling */
+.status-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.status-message.success {
+    background-color: #198754;
+}
+
+.status-message.error {
+    background-color: #dc3545;
+}
+
+/* Pagination styling */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.page-link {
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+/* Form styling enhancements */
+.form-container {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling enhancements */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-radius: 8px 8px 0 0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1401px) {
+    .container {
+        max-width: 60%;
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Product Catalog Microservice</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="bg-dark text-white py-3 mb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>About This Application</h1>
+                </div>
+                <div class="col-md-6">
+                    <nav class="d-flex justify-content-end">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="/about">About this page</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main class="container about-page">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="mb-0">General Description</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            This application is a microservices-based product catalog system built using Node.js and AJAX. 
+                            It demonstrates the implementation of a RESTful API that allows users to perform CRUD operations 
+                            (Create, Read, Update, Delete) on a product catalog stored in a MongoDB database.
+                        </p>
+                        <p>
+                            The application follows a client-server architecture where:
+                        </p>
+                        <ul class="mb-3">
+                            <li>The server provides RESTful API endpoints for managing products</li>
+                            <li>The client (this web page) communicates with the server using AJAX requests</li>
+                            <li>The data is stored in a MongoDB database</li>
+                        </ul>
+                        <p>
+                            The application allows users to:
+                        </p>
+                        <ul>
+                            <li>View all products in the catalog</li>
+                            <li>Add new products to the catalog</li>
+                            <li>Update existing products</li>
+                            <li>Delete products from the catalog</li>
+                            <li>Search for products by title, description, brand, and price range</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="mb-0">Technologies Involved</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3>Backend Technologies:</h3>
+                        <ul class="mb-4">
+                            <li>
+                                <strong>Node.js:</strong> A JavaScript runtime environment that executes JavaScript code outside a web browser.
+                                It's used to build the server-side of the application.
+                            </li>
+                            <li>
+                                <strong>Express.js:</strong> A web application framework for Node.js that provides a set of features for building
+                                web applications and APIs. It's used to create the RESTful API endpoints.
+                            </li>
+                            <li>
+                                <strong>MongoDB:</strong> A NoSQL database that stores data in flexible, JSON-like documents.
+                                It's used to store the product catalog data.
+                            </li>
+                            <li>
+                                <strong>Mongoose:</strong> An Object Data Modeling (ODM) library for MongoDB and Node.js.
+                                It provides a schema-based solution to model application data.
+                            </li>
+                        </ul>
+
+                        <h3>Frontend Technologies:</h3>
+                        <ul>
+                            <li>
+                                <strong>HTML5:</strong> The markup language used for structuring the web pages.
+                            </li>
+                            <li>
+                                <strong>CSS3:</strong> The style sheet language used for describing the presentation of the web pages.
+                            </li>
+                            <li>
+                                <strong>Bootstrap:</strong> A popular CSS framework for developing responsive and mobile-first websites.
+                            </li>
+                            <li>
+                                <strong>JavaScript:</strong> The programming language used to create dynamic content on the web pages.
+                            </li>
+                            <li>
+                                <strong>AJAX (Asynchronous JavaScript and XML):</strong> A set of web development techniques that allows
+                                the client to communicate with the server asynchronously without reloading the page.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="mb-0">Application Weaknesses</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <strong>Limited Authentication:</strong> The application does not implement user authentication or authorization,
+                                which means anyone can access and modify the product catalog.
+                            </li>
+                            <li>
+                                <strong>Basic UI:</strong> While the user interface uses Bootstrap for styling, it could be further improved with more
+                                advanced interactive elements and custom design.
+                            </li>
+                            <li>
+                                <strong>Error Handling:</strong> While the application includes basic error handling, a more robust
+                                error handling system could be implemented to provide better feedback to users.
+                            </li>
+                            <li>
+                                <strong>Limited Validation:</strong> The application includes basic validation for product data,
+                                but more comprehensive validation could be implemented to ensure data integrity.
+                            </li>
+                            <li>
+                                <strong>Scalability:</strong> The current implementation may not scale well for very large product catalogs
+                                without additional optimizations.
+                            </li>
+                            <li>
+                                <strong>Limited Product Information:</strong> The product model is simplified to include only title, description,
+                                brand, and price. A more comprehensive product model could include additional attributes like stock levels,
+                                dimensions, weight, etc.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="mb-0">Alternative Implementation Approaches</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <strong>GraphQL Instead of REST:</strong> Instead of a RESTful API, the application could use GraphQL,
+                                which would allow clients to request exactly the data they need, reducing over-fetching and under-fetching of data.
+                            </li>
+                            <li>
+                                <strong>SQL Database:</strong> Instead of MongoDB, a SQL database like MySQL or PostgreSQL could be used,
+                                which might be more suitable for applications with complex relationships between data entities.
+                            </li>
+                            <li>
+                                <strong>Frontend Framework:</strong> Instead of vanilla JavaScript, a frontend framework like React, Vue.js,
+                                or Angular could be used to create a more interactive and responsive user interface.
+                            </li>
+                            <li>
+                                <strong>Server-Side Rendering:</strong> Instead of client-side rendering with AJAX, server-side rendering
+                                could be used to improve initial page load performance and SEO.
+                            </li>
+                            <li>
+                                <strong>Microservices Architecture:</strong> The application could be further divided into smaller,
+                                independent microservices, each responsible for a specific functionality (e.g., product management,
+                                user management, order management).
+                            </li>
+                            <li>
+                                <strong>Containerization:</strong> The application could be containerized using Docker to ensure
+                                consistent deployment across different environments.
+                            </li>
+                            <li>
+                                <strong>Romanian Localization:</strong> The application could be enhanced with Romanian language support
+                                and currency (RON) to better serve Romanian users.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Product Catalog Microservice</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

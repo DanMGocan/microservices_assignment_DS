@@ -1,0 +1,28 @@
+{
+  "name": "microservices-assignment",
+  "version": "1.0.0",
+  "description": "Microservices assignment with Node.js and AJAX",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "microservices",
+    "ajax"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
