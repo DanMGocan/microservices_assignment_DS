@@ -1,5 +1,10 @@
 /* Custom styling on top of Bootstrap */
 
+/* Apply Roboto font to the entire application */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Product card styling */
 .product-card {
     height: 100%;
